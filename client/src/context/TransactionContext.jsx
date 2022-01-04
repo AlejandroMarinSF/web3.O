@@ -114,9 +114,9 @@ export const TransactionProvider = ({ children}) => {
                 method: 'eth_sendTransaction',
                 params: [{
                     from: currentAccount,
-                    to: addressTo,
+                    to: addressTo, 
                     gas: '0x5208',
-                    value: parsedAmount._hex, // 0.00001
+                    value: parsedAmount._hex, // 0.000011
                 }]
             });
 
